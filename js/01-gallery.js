@@ -22,12 +22,12 @@ function createItemsMarkup(items){
     .join("");
 }
 
-const onContainerClick = (evt) => {
-    evt.preventDefault();
+const onContainerClick = (e) => {
+    e.preventDefault();
   
-    if (evt.target.classList.contains("gallery")) 
+    if (e.target.classList.contains("gallery")) 
      return;
-      const source = evt.target.dataset.source;
+      const source = e.target.dataset.source;
       
     const instance = basicLightbox.create(`
       <img src="${source}"width="800" height="600">`);
