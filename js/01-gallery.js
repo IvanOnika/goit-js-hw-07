@@ -9,7 +9,7 @@ function createItemsMarkup(items){
     return galleryItems
         .map(({ preview, original, description }) => {
         return `<div class="gallery__item">
-        <a class="gallery__link" href="${original.value}">
+        <a class="gallery__link" href="${original}">
           <img
             class="gallery__image"
             src="${preview}"
